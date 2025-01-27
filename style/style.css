@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf)format('opentype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor1:#14F3FF;
+    --cor2:#34CCD5;
+    --cor3:#46A5AA;
+    --cor4:#4A7D80;
+    --cor5:#3F5455;
+    
+    --fonte-android: 'idroid', 'montserrat', 'serif';
+    --fonte-padrao: 'montserrat', 'arial', 'san-serif';
+    --fonte-nome-pagina: 'Bebaus Neue', 'montserrat', 'san-serif';
+}
+body{
+    background-color: var(--cor5);
+}
+header{
+    background-image: linear-gradient(360deg, var(--cor3) 20%, var(--cor1));
+    min-height: 150px;
+    max-height: 200px;
+    text-align: center;
+    box-shadow: 0px 14px 20px 4px rgb(5, 5, 5);
+    width: 100%;
+}
+header h1{
+    font: normal bold 2.8em var(--fonte-nome-pagina);
+    color: white;
+    padding: 30px 0 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+   
+}
+header p {
+    color:white;
+    font:normal normal 1.1em var(--fonte-padrao);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+}
+nav{
+    background-color: var(--cor3);
+    padding: 10px 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.397);
+    
+}
+nav  a{
+    text-decoration:none;
+    font:normal bold 1em var(--fonte-padrao);
+    margin: 10px;
+    color: white;
+    transition: 0.5s ease-in;
+    padding: 10px 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+    
+    
+}
+nav a:hover{
+    background-color: var(--cor5);
+    padding: 10px 8px;
+    font-weight:bold;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+
+main{
+    max-width: 1000px;
+    min-width: 280px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: white;
+    text-align: justify;
+    box-shadow: 0px 15px 10px black;
+    margin-bottom: 0;
+    height: 100%;
+}
+main h1{
+    font: normal normal 2.5em var(--fonte-android);
+    margin: 0 20px 20px 20px;
+    color: var(--cor3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
+    text-align: left;
+}
+main h2{
+    font: normal normal 2.2em var(--fonte-android);
+    margin: 20px;
+    color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor5), transparent 70%);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
+    text-align: left;
+}
+main p{
+    font: normal normal 1.2em var(--fonte-padrao);
+    margin: 15px;
+    line-height: 1.5em;
+    text-indent: 30px;
+}
+main a{
+    font: normal normal 1.1em var(--fonte-nome-pagina);
+    color:var(--cor1);
+    background-color: var(--cor4);
+    padding: 3px;
+    text-decoration: none;
+}
+main strong{
+    color:var(--cor4);
+}
+
+main img{
+    width: 100%;
+    padding: 0 -10px 0 -10px;
+}
+main #bugdroid{
+    display: block;
+    min-width: 280px;
+    max-width: 400px;
+    margin: auto;
+}
+
+div.videos{
+    background-color:var(--cor4);
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 55%;
+    position: relative;
+    
+}
+div.videos > iframe{
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height:90%;  
+}
+aside{
+    background-color:var(--cor2);
+    margin: 20px;
+    padding:10px;
+    border-radius: 10px 10px 25px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+}
+aside h3{
+    background-color: var(--cor5);
+    color: white;
+    font: normal normal 1em var(--fonte-padrao);
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+aside ul{
+    list-style-position: inside;
+    list-style: none;
+    columns: 2;
+    margin-left: 20px;
+    font: normal normal 1em var(--fonte-padrao);
+}
+aside li{
+    margin-bottom: 5px;
+}
+main #ultimo-paragrafo{
+    margin-bottom:0;
+    padding-bottom: 10px;
+}
+footer{
+    text-align:center;
+    background-color:var(--cor1);
+    font: normal normal 1em var(var(--fonte-padrao));
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
